@@ -8,6 +8,7 @@
 - React18
 - webpack5
 - swc
+- pnpm
 
 ### 技术链
 
@@ -23,6 +24,6 @@
 
 - [ ] 配置 husky
 - [ ] 配置 webpack
-  - [ ] 配置环境变量
+  - [x] 配置环境变量
 - [ ] 配置 storybook
 - [ ] 配置 jest

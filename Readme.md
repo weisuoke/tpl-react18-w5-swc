@@ -22,8 +22,9 @@
 
 ## Todo
 
-- [ ] 配置 husky
+- [x] 配置 husky
 - [ ] 配置 webpack
   - [x] 配置环境变量
 - [ ] 配置 storybook
-- [ ] 配置 jest
+- [x] 配置 jest
+- [ ] 配置 tailwindcss

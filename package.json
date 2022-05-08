@@ -1,11 +1,12 @@
 {
   "name": "tpl-react18-w5-swc",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack serve",
     "build": "NODE_ENV=production webpack",
+    "test": "jest",
     "lint:lint-staged": "lint-staged"
   },
   "repository": {
@@ -20,9 +21,13 @@
   },
   "homepage": "https://github.com/weisuoke/tpl-react18-w5-swc#readme",
   "devDependencies": {
+    "@babel/traverse": "7.17.10",
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@swc/core": "^1.2.177",
+    "@swc/helpers": "^0.3.13",
+    "@swc/jest": "^0.2.20",
+    "@types/jest": "^27.5.0",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
@@ -37,6 +42,9 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "react-dev-utils": "^12.0.1",

@@ -27,4 +27,4 @@
   - [x] 配置环境变量
 - [ ] 配置 storybook
 - [x] 配置 jest
-- [ ] 配置 tailwindcss
+- [x] 配置 tailwindcss

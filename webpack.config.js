@@ -19,10 +19,16 @@ const commonConfig = merge([
       alias: {
         '@': path.resolve('src')
       }
-    }
+    },
+    plugins: [
+      new webpack.DefinePlugin(env.stringified)
+    ]
   },
   parts.page(),
   parts.loadTS(),
+  parts.loadLess(),
+  parts.loadCSS(),
+  parts.loadPic(),
 ])
 
 const productionConfig = merge([]);

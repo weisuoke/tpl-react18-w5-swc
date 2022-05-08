@@ -34,3 +34,39 @@ exports.loadTS = () => ({
     ]
   }
 })
+
+exports.loadCSS = () => ({
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", "postcss-loader"]
+      }
+    ]
+  }
+});
+
+exports.loadLess = () => ({
+  module: {
+    rules: [
+      {
+        test: /\.less$/,
+        use: ["style-loader", "css-loader", "postcss-loader", "less-loader"]
+      }
+    ]
+  }
+});
+
+exports.loadPic = () => ({
+  module: {
+    rules: [
+      {
+        test: /\.(jpg|png|bmp|gif)/,
+        type: 'asset/resource',
+        generator: {
+          filename: '[hash][ext]'
+        }
+      }
+    ]
+  }
+})

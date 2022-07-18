@@ -18,7 +18,8 @@ const commonConfig = merge([
     resolve: {
       alias: {
         '@': path.resolve('src')
-      }
+      },
+      extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
     plugins: [
       new webpack.DefinePlugin(env.stringified)
